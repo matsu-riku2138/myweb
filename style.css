@@ -1,0 +1,205 @@
+*,
+::before,
+::after{
+    padding: 0;
+    margin: 0;
+}
+/* ボディー */
+body{
+    background-color: #fff;
+    font-family: "Noto Sans JP";
+}
+
+.main{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: auto;
+}
+
+.profile{
+    max-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.profile-name{
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.profile-img{
+    margin-left: auto;
+    margin-right: auto;
+}
+.profile-img img{
+    max-width: 250px;
+}
+.name-text{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.profile-text{
+    margin-left: 30px;
+    margin-right: auto;
+}
+.profile-text p{
+    line-height: 25px;
+    font-size: 18px;
+}
+
+.develop{
+    max-width: auto;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+.card{
+    height:10rem; 
+    width: 20rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.dev-msg{
+    text-align: center;
+}
+.dev-list{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.develop h2{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.skill{
+    max-width: 1000px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+.skill h2{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+.skill-text{
+    text-align: center;
+}
+
+.contact{
+    max-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    display: block;
+    flex-direction: column;
+    max-width: auto;
+    align-items: center;
+}
+.contact-from{
+    max-width: 600px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+    align-items: center;
+}
+.contact h2{
+    text-align: center;
+}
+
+.submit-button{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 100px;
+}
+/* フッター */
+.footer{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.sns-icons{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.sns-icon-twitter{
+    padding-right: 15px;
+}
+.sns-icon-github{
+    padding-left: 15px;
+}
+.copyright{
+    margin-top: 20px;
+}
+@media (max-width:992px){
+    .profile{
+        display: flex;
+        max-width: auto;
+        flex-direction: column;
+    }
+    .profile-name{
+        max-width: 250px;
+        display: block;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .profile-text{
+        max-width: 250px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .dev-list{
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        justify-content: center;
+    }
+    .card{
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+        max-width: auto;
+    }
+}

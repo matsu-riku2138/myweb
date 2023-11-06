@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>まりつく.com</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel=”icon” href="static/favicon.ico"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html"><h2>まりつく.com</h2></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#profile">私について</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#develop">開発したもの</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#skill">やってみたこと</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#contact">問い合わせ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="main">
+        <div class="profile  pb-5" id="profile">
+            <div class="profile-name">
+                <div class="profile-img">
+                    <img src="./static/waifu4.jpg" class="rounded rounded-circle" alt="icon">
+                </div>
+                <div class="name-text">
+                    <h2>まりつく</h2>
+                </div>
+            </div>
+            <div class="profile-text">
+                <h2>自己紹介</h2>
+                <p>とある高専生。<br>
+                    github.ioに移行します。
+                </p>
+                <h4>取り組んでいること</h4>
+                <ul>
+                    <li>Goでのウェブアプリの開発</li>
+                    <li>APIサーバーの開発</li>
+                    <li>応用情報技術者試験の取得に向けた勉強</li>
+                </ul>
+                <h4>やってみたいこと</h4>
+                <ul>
+                    <li>マイコン</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="develop pb-5" id="develop">
+            <h2 class="dev-msg">開発したもの</h2>
+            <div class="dev-list">
+                <div class="row g-2 m-auto">
+                    <div class="col-md-6">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">E-System</h5>
+                                <p class="card-text">高専祭でスコア管理のために<br>開発したAPIです</p>
+                                <a href="https://api.best-book.info" class="btn btn-secondary">アクセスする</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">ライフゲーム</h5>
+                                <p class="card-text">生命の生存、死滅をシュミレーションすることができます</p>
+                                <a href="./lifegame.html" class="btn btn-secondary">ゲームで遊ぶ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-2 m-auto">
+                    <div class="col-md-6">
+                        <div class="card text-center mt-10">
+                            <div class="card-body">
+                                <h5 class="card-title">ブログ</h5>
+                                <p class="card-text">Coming soon<br>please wait!</p>
+                                <a href="#develop" class="btn btn-secondary">Coming Soon</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Coming soon</h5>
+                                <p class="card-text">Coming soon<br>please wait!</p>
+                                <a href="#develop" class="btn btn-secondary">Coming Soon</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="skill pb-5" id="skill">
+            <h2 class="skill-text">やってみたこと</h2>
+            <div class="col-gl-7 m-auto px-2" style="text-align: left;max-width: 1000px;">
+                <div class="card-header">言語</div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="col-md-2" scope="col">名前</th>
+                            <th class="col-md-3" scope="col">使ったもの</th>
+                            <th class="col-md-5" scope="col">やったこと</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>C/C++</td>
+                            <td>VectorなどのSTL</td>
+                            <td>高専プロコンの開発言語として利用した。</td>
+                        </tr>
+                        <tr>
+                            <td>Python</td>
+                            <td>LibRosaなどの音声分析ライブラリ</td>
+                            <td>音声分析、スクレイピング、高専プロコンの開発言語として利用した。</td>
+                        </tr>
+                        <tr>
+                            <td>Go</td>
+                            <td>Echo、Gin</td>
+                            <td>卒業研究で開発しているソフトに利用している。</td>
+                        </tr>
+                        <tr>
+                            <td>HTML、CSS</td>
+                            <td>HTML5、bootstrap</td>
+                            <td>ウェブサイトやウェブアプリの開発に利用した。</td>
+                        </tr>
+                        <!-- <tr>
+                            <td>C#</td>
+                            <td>Unityのスクリプト</td>
+                            <td>高専祭のリズムゲームの開発をした際に利用した。</td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+            <!-- <div class="col-gl-7 m-auto px-2" style="text-align: left;max-width: 1000px;">
+                <div class="card-header">アプリケーション、OSなど</div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="col-md-2" scope="col">名前</th>
+                            <th class="col-md-3" scope="col">使ったもの</th>
+                            <th class="col-md-5" scope="col">やったこと</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CentOS、Rocky</td>
+                            <td>OSコマンド</td>
+                            <td>VPSやファイルサーバで利用している。</td>
+                        </tr>
+                        <tr>
+                            <td>Gentoo Linux</td>
+                            <td>gentoo Wiki</td>
+                            <td>OSをインストールしてしばらく普段使いしてみた。</td>
+                        </tr>
+                        <tr>
+                            <td>Arch Linux</td>
+                            <td>Arch Wiki</td>
+                            <td>高専プロコンでの開発環境に利用した。</td>
+                        </tr>
+                        <tr>
+                            <td>Nginx</td>
+                            <td>Webサーバー、リバースプロキシ</td>
+                            <td>ウェブサイトの構築やウェブアプリの開発に利用した。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> -->
+            <div class="col-gl-7 m-auto px-2" style="text-align: left;max-width: 1000px;">
+                <div class="card-header">資格・検定</div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="col-md-2" scope="col">名前</th>
+                            <th class="col-md-3" scope="col">取得年月</th>
+                            <th class="col-md-5" scope="col">できること</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>普通自動車免許</td>
+                            <td>令和4年5月</td>
+                            <td>車の運転</td>
+                        </tr>
+                        <tr>
+                            <td>アマチュア無線３級</td>
+                            <td>令和4年8月</td>
+                            <td>50W以下のアマチュア無線機での交信</td>
+                        </tr>
+                        <tr>
+                            <td>基本情報技術者試験</td>
+                            <td>令和5年9月</td>
+                            <td>基本的な情報の知識があると認められた</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <hr>
+        <div class="contact pb-3 border-bottom" id="contact">
+            <h2 class="contact-text">お問い合わせ</h2>
+            <div class="contact-from">
+                <!-- <form action="#" method="post"> -->
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">メールアドレス</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" style="max-width: 600px; margin-left: auto;margin-right: auto;">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">お名前</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" style="max-width: 600px; margin-left: auto;margin-right: auto;">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">お問い合わせ内容</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"  style="max-width: 600px;margin-left: auto;margin-right: auto;"></textarea>
+                    </div>
+                    <div class="submit-button">
+                        <div class="d-grid gap-2 d-md-block" style="margin-left: auto;margin-right: auto;">
+                            <button type="submit" class="btn btn-secondary rounded-pill">送信する</button>
+                          </div>
+                    </div>
+                <!-- </form> -->
+            </div>
+        </div>
+    </main>
+    <!-- <hr> -->
+    <footer class="footer">
+        <div class="container" style="text-align: center;">
+            <div class="sns-icons">
+                <div class="sns-icon-twitter">
+                    <a href="https://twitter.com">
+                        <i class="bi bi-twitter" style="font-size:36px;color: rgb(29,155,240);"></i>
+                    </a>
+                </div>
+                <div class="sns-icon-github">
+                    <a href="https://github.com">
+                        <i class="bi bi-github" style="font-size:36px; color: #000;"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="copyright">&copy;2022-2023 まりつく.com All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
