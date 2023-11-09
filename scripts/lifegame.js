@@ -27,7 +27,7 @@ let field = [
 ];
 function setup(){//初期化
     //キャンバスに表示させるフィールド
-    let canvas = createCanvas(640, 380);
+    let canvas = createCanvas(640, 380);;
     canvas.parent('lifegame');
     //動作開始ボタン
     let button1=createButton("動かす")
@@ -42,6 +42,32 @@ function setup(){//初期化
     .class(`btn btn-md btn-secondary text-white`)
     .position(windowWidth / 2 - this.width / 6,590);
     button3.mousePressed(clearField)
+    if(windowWidth <= 576){
+        field = [
+            [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,],
+            [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,],
+            [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,],
+            [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,],
+            [0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,],
+            [0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,],
+            [0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,],
+            [0,0,1,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1,1,],
+            [0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,],
+            [0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,],
+            [0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,],
+            [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,],
+            [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,],
+            [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,],
+            [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,],
+            [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,],
+            [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,],
+            [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,],
+            [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,],
+            [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,],
+        ];
+        canvas = createCanvas(320, 380);
+    }else{
+    }
     // let startButton = createButton("動かす");
     // startButton.mousePressed(startgame);
     // startButton.parent("startbtn");
@@ -157,6 +183,6 @@ function mousePressed(){
     // field[floor(mouseY/title_size)][floor(mouseX/title_size)] = field[floor(mouseY/title_size)][floor(mouseX/title_size)] == 0 && !status? 1:0;
     field[floor(mouseY/title_size)][floor(mouseX/title_size)] = field[floor(mouseY/title_size)][floor(mouseX/title_size)] == 0 ? 1:0;
 }
-function touchStarted(){
+function touches(){
     field[floor(mouseY/title_size)][floor(mouseX/title_size)] = field[floor(mouseY/title_size)][floor(mouseX/title_size)] == 0 ? 1:0;
 }
