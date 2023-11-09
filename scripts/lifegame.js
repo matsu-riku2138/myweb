@@ -23,7 +23,7 @@ let field = [
     [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,],
     [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,],
     [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,],
-    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,],
+    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,],
 ];
 function setup(){//初期化
     //キャンバスに表示させるフィールド
@@ -31,16 +31,16 @@ function setup(){//初期化
     canvas.parent('lifegame');
     //動作開始ボタン
     let button1=createButton("動かす")
-    .class(`btn btn-lg btn-secondary text-white`)
-    .position(800,590);
+    .class(`btn btn-md btn-secondary text-white`)
+    .position(windowWidth / 2 - this.width / 2,590);
     button1.mousePressed(startgame)
     let button2=createButton("止める")
-    .class(`btn btn-lg btn-secondary text-white`)
-    .position(900,590);
+    .class(`btn btn-md btn-secondary text-white`)
+    .position(windowWidth / 2 - this.width / 3,590);
     button2.mousePressed(stopgame)
     let button3=createButton("クリア")
-    .class(`btn btn-lg btn-secondary text-white`)
-    .position(1000,590);
+    .class(`btn btn-md btn-secondary text-white`)
+    .position(windowWidth / 2 - this.width / 6,590);
     button3.mousePressed(clearField)
     // let startButton = createButton("動かす");
     // startButton.mousePressed(startgame);
