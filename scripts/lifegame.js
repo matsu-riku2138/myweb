@@ -157,3 +157,6 @@ function mousePressed(){
     // field[floor(mouseY/title_size)][floor(mouseX/title_size)] = field[floor(mouseY/title_size)][floor(mouseX/title_size)] == 0 && !status? 1:0;
     field[floor(mouseY/title_size)][floor(mouseX/title_size)] = field[floor(mouseY/title_size)][floor(mouseX/title_size)] == 0 ? 1:0;
 }
+function touchStarted(){
+    field[floor(mouseY/title_size)][floor(mouseX/title_size)] = field[floor(mouseY/title_size)][floor(mouseX/title_size)] == 0 ? 1:0;
+}
