@@ -1,11 +1,9 @@
-// let timer = 0;
 let timestamp = 0;
 let isMove = false;//動いてるいるとtrue;
 let title_size = 16;
 let direction = 8;
 let field
 function setup(){//初期化
-    //キャンバスに表示させるフィールド
     let canvas
     let button1
     let button2
@@ -176,11 +174,7 @@ function draw(){//ゲームループ
     }
     drawField(field);
 }
-// function mousePressed(){
-//     // field[floor(mouseY/title_size)][floor(mouseX/title_size)] = field[floor(mouseY/title_size)][floor(mouseX/title_size)] == 0 && !status? 1:0;
-//     field[floor(mouseY/title_size)][floor(mouseX/title_size)] = field[floor(mouseY/title_size)][floor(mouseX/title_size)] == 0 ? 1:0;
-// }
-function touchStarted(){
+function mouseClicked(){
     field[floor(mouseY/title_size)][floor(mouseX/title_size)] = field[floor(mouseY/title_size)][floor(mouseX/title_size)] == 0 ? 1:0;
     console.log("タッチ");
 }
